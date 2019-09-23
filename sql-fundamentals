@@ -1,0 +1,78 @@
+SQL – fundamentals 1 - Challenge:
+
+SQL Basics: Simple WHERE and ORDER BY
+SELECT * FROM people 
+WHERE age > 50 
+ORDER BY age DESC;
+
+SQL Basics: Simple DISTINCT
+Select DISTINCT age from people;
+
+SQL Grasshopper: Select Columns
+Select custid, custname, custstate
+from customers;
+
+
+SQL – fundamentals 2 - Challenge:
+
+SQL Basics: Simple SUM
+select sum(age) as age_sum
+from people;
+
+SQL Basics: Simple MIN / MAX
+select min(age) as age_min, max(age) as age_max 
+from people;
+
+Find all active students
+select * from students where IsActive;
+
+
+SQL – fundamentals 3 - Challenge:
+
+Adults only (SQL for Beginners #1)
+select name, age from users where age >= 18
+
+On the Canadian Border (SQL for Beginners #2)
+select name, country from travelers
+where country NOT IN('Canada', 'Mexico', 'USA');
+
+Register for the Party (SQL for Beginners #3)
+INSERT INTO participants (name, age, attending)
+VALUES ('Maria', 59, true);
+SELECT * FROM participants;
+
+
+
+SQL – fundamentals 4 - Challenge:
+
+Collect Tuition (SQL for Beginners #4)
+select * from students
+where  NOT tuition_received;
+
+Easy SQL: LowerCase
+SELECT id, name, birthday,   LOWER(race) as race
+FROM demographics;
+
+Easy SQL - Ordering
+select * from companies order by employees desc
+
+
+SQL – fundamentals 5 - Challenge:
+
+SQL Basics: Mod
+SELECT MOD(number1, number2) AS mod
+FROM decimals;
+
+Easy SQL: Rounding Decimals
+SELECT 
+	FLOOR(number1)AS number1,
+	CEILING(number2) AS number2
+FROM decimals;
+
+Easy SQL: Convert to Hexadecimal
+SELECT 
+	to_hex(legs) AS legs,
+	to_hex(arms) AS arms
+FROM monsters;
+
+
